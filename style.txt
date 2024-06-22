@@ -1,0 +1,130 @@
+QMainWindow {{
+    background-color: {bg_main};
+}}
+
+QLabel {{
+    color: {text_primary};
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: text_light;
+}}
+
+QLabel#title {{
+    font-size: 36px;
+    font-weight: bold;
+    color: {accent_primary};
+}}
+
+QTextEdit, QListWidget, QLineEdit {{
+    background-color: {bg_input};
+    border: 2px solid {accent_secondary};
+    border-radius: 10px;
+    padding: 8px;
+    color: {text_primary};
+}}
+
+QTextEdit:focus, QListWidget:focus, QLineEdit:focus {{
+    border: 2px solid {accent_primary};
+}}
+
+QPushButton {{
+    background-color: {accent_primary};
+    color: {text_light};
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: text_light;
+}}
+
+QPushButton:hover {{
+    background-color: {accent_hover};
+}}
+
+QPushButton:pressed {{
+    background-color: {accent_pressed};
+}}
+
+QCheckBox {{
+    spacing: 8px;
+}}
+
+QCheckBox::indicator {{
+    width: 15px;
+    height: 15px;
+}}
+
+QCheckBox::indicator:unchecked {{
+    border: 2px solid {accent_secondary};
+    background-color: {bg_input};
+    border-radius: 8px;
+}}
+
+QCheckBox::indicator:checked {{
+    background-color: {highlight};
+    border: 2px solid {highlight};
+    border-radius: 8px;
+}}
+
+QScrollBar:vertical {{
+    border: none;
+    background-color: none;
+    width: 5px;
+    margin: 0px;
+}}
+
+QScrollBar::handle:vertical {{
+    background-color: {accent_secondary};
+    min-height: 20px;
+    border-radius: 2px;
+}}
+
+QScrollBar::handle:vertical:hover {{
+    background-color: {accent_primary};
+}}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{
+    background-color: none;
+    height: 0px;
+}}
+
+QScrollBar:horizontal {{
+    border: none;
+    background-color: none;
+    height: 5px;
+    margin: 0px;
+}}
+
+QScrollBar::handle:horizontal {{
+    background-color: {accent_secondary};
+    min-width: 20px;
+    border-radius: 2px;
+}}
+
+QScrollBar::handle:horizontal:hover {{
+    background-color: {accent_primary};
+}}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {{
+    background-color: none;
+    width: 0px;
+}}
+
+QFrame#advanced_frame {{
+    border: 2px solid {accent_secondary};
+    border-radius: 15px;
+    background-color: {bg_secondary};
+    padding: 15px;
+}}
+
+QListWidget::item {{
+    padding: 8px;
+    border-bottom: 1px solid {bg_secondary};
+}}
+
+QListWidget::item:selected {{
+    background-color: {accent_primary};
+    color: {text_light};
+}}
+
+QListWidget::item:hover {{
+    background-color: {highlight_hover};
+}}
