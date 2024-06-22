@@ -7,10 +7,68 @@ import pickle
 import pandas as pd
 from tqdm import tqdm
 from transformers import AutoModel, AutoTokenizer
-
+from torch.nn import TransformerEncoder, TransformerEncoderLayer
+import torch.nn.functional as F
 # ------------------------------------------------
 # PyTorch Model Definitions
 # ------------------------------------------------
+
+class AffinityLM(nn.Module):
+    def __init__(self, embedding_dim, linear_dim, num_attention_layers, num_heads, dropout_rate):
+        super(AffinityLM, self).__init__()
+        self.embedding_dim = embedding_dim
+        self.protein_projection = nn.Linear(1536, embedding_dim)
+        self.molecule_projection = nn.Linear(768, embedding_dim)
+
+        transformer_layers = TransformerEncoderLayer(embedding_dim, num_heads, dim_feedforward=embedding_dim * 4, dropout=dropout_rate, activation=F.gelu, batch_first = True)
+        self.self_attention = TransformerEncoder(transformer_layers, num_attention_layers)
+        
+        self.affinity_head = nn.Sequential(
+            nn.Linear(embedding_dim, linear_dim),
+            nn.GELU(),
+            nn.Linear(linear_dim, 1)
+        )
+        self.binding_site_head = nn.Sequential(
+            nn.Linear(embedding_dim, linear_dim),
+            nn.GELU(),
+            nn.Linear(linear_dim, 1),
+            nn.Sigmoid()
+        )
+
+    def forward(self, protein_embedding, molecule_embedding):
+        seq_length = protein_embedding.size(0)
+        mol_length = molecule_embedding.size(0)
+
+        # Feature extraction
+        protein_embedding = self.protein_projection(protein_embedding)
+        molecule_embedding = self.molecule_projection(molecule_embedding)
+
+        # Weight embeddings
+        protein_weight = mol_length / seq_length
+        molecule_weight = seq_length / mol_length
+
+        weighted_protein_embedding = protein_embedding * protein_weight
+        weighted_molecule_embedding = molecule_embedding * molecule_weight
+
+        # Concatenate weighted embeddings
+        features = torch.cat((weighted_protein_embedding, weighted_molecule_embedding), dim=0)
+
+        # Self-attention layers
+        features = self.self_attention(features)
+
+        # Affinity prediction
+        affinity_output = self.affinity_head(features).squeeze().mean()
+        print(affinity_output)
+
+        # Drug target interaction prediction
+        dti_output = self.dti_head(features).squeeze().mean()
+        print(dti_output)
+
+        # Binding site prediction
+        binding_site_output = self.binding_site_head(features[:seq_length]).squeeze()
+        print(binding_site_output)
+
+        return affinity_output, dti_output, binding_site_output
 
 class AffinityLMSmallModel(nn.Module):
     def __init__(self, dropout_rate=0.2):
@@ -84,7 +142,7 @@ class ProteinTokenizer:
 # ------------------------------------------------
 
 class AffinityLM:
-    def __init__(self, model_path='data/AffinityLM-Small-3.pt', device=None, protein_cache_size=1000, molecule_cache_size=1000000):
+    def __init__(self, model_path='data/AffinityLM3.pt', device=None, protein_cache_size=1000, molecule_cache_size=1000000):
         self.device = device if device is not None else ('cuda' if torch.cuda.is_available() else 'cpu')
 
         # Load our affinity prediction model
