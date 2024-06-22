@@ -46,9 +46,9 @@ Bindwell aims to revolutionize pharmaceutical R&D, ultimately bringing life-savi
 
 Bindwell's approach to drug discovery offers incredible implications for healthcare and scientific research:
 
-• **Rapid Response to Outbreaks**: Bindwell's sequence-only model enables immediate screening for new drugs, eliminating the need for time-consuming 3D data or physical compounds, allowing for rapid response to global pandemics and disease outbreaks.
-• **Advancing Scientific Research**: Bindwell's novel model architecture addresses data scarcity issues, providing a viable path to overcome longstanding data availability challenges in the field, and advancing scientific research.
-• **Cost and Time Savings**: Bindwell's approach offers a nearly 100% cost reduction compared to traditional methods ([such as](https://www.colorado.edu/lab/hts/rates)), while screening thousands of times more compounds, ultimately leading to faster and cheaper access to medication for people.
+* **Rapid Response to Outbreaks**: Bindwell's sequence-only model enables immediate screening for new drugs, eliminating the need for time-consuming 3D data or physical compounds, allowing for rapid response to global pandemics and disease outbreaks.
+* **Advancing Scientific Research**: Bindwell's novel model architecture addresses data scarcity issues, providing a viable path to overcome longstanding data availability challenges in the field, and advancing scientific research.
+* **Cost and Time Savings**: Bindwell's approach offers a nearly 100% cost reduction compared to traditional methods ([such as](https://www.colorado.edu/lab/hts/rates)), while screening thousands of times more compounds, ultimately leading to faster and cheaper access to medication for people.
 
 **Building Bindwell**
 -------------------
