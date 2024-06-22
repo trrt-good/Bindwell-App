@@ -9,8 +9,6 @@ This guide will walk you through the steps to install and set up Bindwell on you
 * Python 3.10.14 (make sure you have this version installed on your system)
 * Git (for cloning the repository)
 
-**Setting Up the Environment**
------------------------------
 
 ### Clone the Repository
 
