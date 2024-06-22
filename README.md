@@ -1,6 +1,8 @@
-![Screenshot from 2024-06-21 22-32-55](https://github.com/trrt-good/Bindwell/assets/91699644/f5301321-3dda-45bb-a2b9-02cf374d5e22)
+![Screenshot from 2024-06-21 23-56-17](https://github.com/trrt-good/Bindwell/assets/91699644/b52e4798-2faa-4b2c-a40b-7edfd722c8bb)
 
 # **BINDWELL: The intelligent approach to therapeutic development, powered by AI**
+
+**Installation Instructions:** 
 
 **Inspiration**
 ---------------
