@@ -1,6 +1,6 @@
 # Validation
 We compared the performance of our model, AffinityLM, against several other industry methods, including [CAPLA, CAPLA-Pred](https://doi.org/10.1093/bioinformatics/btad049), 
-[DeepDTA](https://doi.org/10.1093/bioinformatics/bty593), [DeepDTAF](https://doi.org/10.1093/bib/bbab072), [Pafnucy](https://doi.org/10.1093/bioinformatics/bty374), [OnionNet](https://doi.org/10.1021/acsomega.9b01997), [FAST](https://doi.org/10.1021/acs.jcim.0c01306),[ IMCP-SF](https://doi.org/10.1016/j.csbj.2022.02.004), [GLI](https://doi.org/10.1109/ICDM54844.2022.00175), and the affinity prediction model made by [Blanchard et al.](https://doi.org/10.1177/10943420221121804), on benchmarks described in Section 2.3.
+[DeepDTA](https://doi.org/10.1093/bioinformatics/bty593), [DeepDTAF](https://doi.org/10.1093/bib/bbab072), [Pafnucy](https://doi.org/10.1093/bioinformatics/bty374), [OnionNet](https://doi.org/10.1021/acsomega.9b01997), [FAST](https://doi.org/10.1021/acs.jcim.0c01306),[ IMCP-SF](https://doi.org/10.1016/j.csbj.2022.02.004), [GLI](https://doi.org/10.1109/ICDM54844.2022.00175), and the affinity prediction model made by [Blanchard et al.](https://doi.org/10.1177/10943420221121804). Results are below.
 
 **Table 1:** AffinityLM's performance on the Test-2016_290 dataset by [Jin et al.](https://doi.org/10.1093/bioinformatics/btad049). Higher R is better, lower RMSE and MAE are better. Best values are in bold.
 | Method | R | RMSE | MAE |
