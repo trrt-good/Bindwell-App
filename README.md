@@ -4,6 +4,8 @@
 
 [**Installation Instructions**](docs/Installation.md)
 
+[**Model Performance**](docs/Validation.md)
+
 **Inspiration**
 ---------------
 
