@@ -1,8 +1,8 @@
-![Screenshot from 2024-06-21 23-56-17](https://github.com/trrt-good/Bindwell/assets/91699644/b52e4798-2faa-4b2c-a40b-7edfd722c8bb)
+![BindwellApp](media/BindwellApp.png)
 
 # **BINDWELL: The intelligent approach to therapeutic development, powered by AI**
 
-**Installation Instructions:** 
+[**Installation Instructions**](docs/Installation.md)
 
 **Inspiration**
 ---------------
@@ -55,7 +55,7 @@ Bindwell's approach to drug discovery offers incredible implications for healthc
 **Building Bindwell**
 -------------------
 
-![AffinityLM-New](https://github.com/trrt-good/Bindwell/assets/91699644/0deb2bfa-faa0-4678-91e0-cbe0f29be8b4)
+![AffinityLM](media/AffinityLM.png)
 
 We developed Bindwell's AffinityLM model by training it on a dataset of 20 million drug-target pairs from BindingDB and Uniprot, the largest dataset ever used for this task. AffinityLM uses two language models to encode protein and ligand sequences, followed by linear transformations, concatenation, self-attention, and two prediction heads for binding affinity and site (Pictured above). We implemented AffinityLM in PyTorch, trained it in 39 hours on consumer hardware, and created a user-friendly frontend with PyQT5. Bindwell and AffinityLM represent a significant milestone in AI-driven drug discovery, with the potential to the field.
 
