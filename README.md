@@ -1,5 +1,3 @@
-
-
 # **BINDWELL: The intelligent approach to therapeutic development, powered by AI**
 
 **Inspiration**
@@ -8,18 +6,52 @@
 The exorbitant cost of prescription drugs in the US has become a crippling burden for millions of Americans. In 2020, the average American spent over $1,200 on prescription medications [1], with many more forced to choose between life-saving treatments and basic necessities. The consequences are dire: a staggering 1 in 5 Americans cannot afford their medications, leading to devastating health outcomes and even death [2]. The root of this crisis lies in the staggering cost of bringing a drug to market in the US - a whopping $2 billion and 15 years on average [3]. A significant portion of this expenditure is squandered on the inefficient and time-consuming process of high-throughput screening in drug discovery. By revolutionizing this process, we can reduce the financial burden on patients and make life-changing treatments more accessible. Bindwell was born from this urgent need, driven by the conviction that AI can transform the drug discovery process, making it faster, cheaper, and more effective.
 
 **What is Bindwell?**
----------------------
+---------------
 
-MAKE MORE CLEAR WHAT MAKES BINDWELL UNIQUE AND WHAT'S NEW ABOUT AFFINITYLM. GO MORE INTO DEPTH ABOUT TRADITIONAL METHODS.
+Drug discovery is the process of identifying new medicines that can treat or cure diseases by interacting with specific proteins in the body.
 
-Bindwell is a virtual screening platform that accelerates the drug discovery process using our model, AffinityLM. This AI-powered model predicts the binding affinity of small molecules to target proteins, outperforming traditional methods in speed and accuracy. Rigorously tested against industry benchmarks, AffinityLM has consistently demonstrated superior performance, making it an invaluable tool for researchers in the pharmaceutical industry.
+Bindwell revolutionizes drug discovery through AI-powered virtual screening. Traditional drug discovery is slow and expensive, typically involving:
 
-Here's a simple breakdown of how Bindwell works:
+1. Lab-based high-throughput screening: physically testing millions of compounds to find what fits with a target protein.
+2. Structure-based virtual screening: computationally docking compounds to 3D protein models.
 
-1. Researchers input their target protein (enzyme, receptor, hormone, etc) into the Bindwell platform as a FASTA sequence.
-2. Bindwell screens a large chemical database, using AffinityLM to predict the binding affinity of each drug to the target protein.
-3. The platform ranks the drugs based on their predicted binding affinity and returns the top 25 candidates.
-4. The entire process takes less than a second, providing researchers with a list of the most promising drug candidates for further testing.
+Both methods are time-consuming, costly, and have limitations [CITATION NEEDED],
+
+Bindwell's innovation: AffinityLM, our proprietary AI model that predicts drug-protein interactions with unprecedented speed and accuracy.
+
+**Key features:**
+1. Speed: Screens 700,000 compounds per second (vs. days/ for traditional methods).
+2. Sequence-based: Works with any protein, no 3D structure needed.
+3. Comprehensive: Predicts binding affinity rather than binary hits.
+4. Data-rich: Trained on 20 million drug-protein pairs, the largest dataset ever used in the field.
+
+**How it works:**
+1. Input: Target protein sequence
+2. Process: AI-based screening against a standard library of 500,000 drug-likely compounds
+3. Output: Top 100 drug candidates with binding predictions
+
+Bindwell aims to revolutionize pharmaceutical R&D, ultimately bringing life-saving drugs to market faster and more affordably. It's not an incremental improvement, but a paradigm shift in drug discovery powered by cutting-edge AI.
+
+**Impact**
+---------------
+
+Bindwell's approach to drug discovery offers incredible implications for healthcare and scientific research:
+
+1. **Rapid Response to Outbreaks**: 
+   - COVID-19 highlighted the need for swift drug development
+   - Traditional methods requiring 3D data or physical compounds are time-prohibitive
+   - Bindwell's sequence-only model enables immediate screening without waiting for X-ray crystallography
+   - Bindwell's user-friendly interface facilitates rapid adoption by researchers
+
+2. **Advancing Scientific Research**:
+   - Novel model architecture addresses data scarcity issues
+   - Open-source approach encourages community adoption and further innovation
+   - Demonstrates a viable path for overcoming the longstanding data availability issue in the field
+
+3. **Accuracy and Efficiency**:
+   - Outperforms all tested industry methods across benchmarks (
+   - Screens ~700,000 molecules per second
+   - Capable of scanning all known organic molecules in just 4.5 minutes
 
 **Building Bindwell**
 -------------------
