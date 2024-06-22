@@ -219,10 +219,10 @@ class BindwellApp(QMainWindow):
         molecule_batch = int(self.molecule_batch_entry.text() or 0)
         prediction_batch = int(self.prediction_batch_entry.text() or 0)
         save_cache = self.caching_check.isChecked()
-        # You would use these values in your actual screening function
 
-        results = self.model.score_molecules(protein=protein_sequence,molecules=smiles_list, batch_size=prediction_batch, prot_batch_size=protein_batch, mol_batch_size=molecule_batch, save_cache=save_cache).to_numpy()
-
+        results = self.model.score_molecules(protein=protein_sequence,molecules=smiles_list, batch_size=prediction_batch, prot_batch_size=protein_batch, mol_batch_size=molecule_batch, save_cache=save_cache)
+        results.to_csv("data/predictions.csv")
+        results = results.to_numpy()
         self.result_list.clear()
         for i, (drug, score) in enumerate(results[:100], 1):
             self.result_list.addItem(f"{score:<6.2f} {drug}")
