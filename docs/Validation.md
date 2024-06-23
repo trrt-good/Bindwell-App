@@ -26,3 +26,6 @@ We compared the performance of our model, AffinityLM, against several other indu
 | Pafnucy | 0.566 | 1.658 | 1.291 |
 | IGN | 0.528 | 1.795 | 1.431 |
 | IMCP-SF | 0.631 | 1.560 | 1.205 |
+
+Strait line test results:
+![Screenshot from 2024-06-22 23-36-43](https://github.com/trrt-good/Bindwell/assets/91699644/541b300a-50ae-441c-8948-99a954205db7)
