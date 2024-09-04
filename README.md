@@ -9,32 +9,32 @@
 **Inspiration**
 ---------------
 
-The exorbitant cost of prescription drugs in the US has become a crippling burden for millions of Americans. In 2020, the average American spent over $1,200 on prescription medications [1], with many more forced to choose between life-saving treatments and basic necessities. The consequences are dire: a staggering 1 in 5 Americans cannot afford their medications, leading to devastating health outcomes and even death [2]. The root of this crisis lies in the staggering cost of bringing a drug to market in the US - a whopping $2 billion and 15 years on average [3]. A significant portion of this expenditure is squandered on the inefficient and time-consuming process of high-throughput screening in drug discovery. By revolutionizing this process, we can reduce the financial burden on patients and make life-changing treatments more accessible. Bindwell was born from this urgent need, driven by the conviction that AI can transform the drug discovery process, making it faster, cheaper, and more effective.
+Bindwell revolutionizes pesticide development through AI-powered virtual screening. We're developing an end-to-end, region-specific pesticide discovery platform that combines:
 
-**What's drug discovery?**: Drug discovery is the process of finding new medicines that target specific proteins in the body to treat or cure diseases. It starts with researchers screening thousands or millions of compounds to identify those that bind effectively to a particular protein, winnowing down millions of possible drugs to a few hundred promising leads. This incredibly labor-intensive and costly step is the most critical in the preclinical phase.
+1. Predictive models for region-specific pathogen, pest, and climate forecasts (WaterGate Model).
+2. AI-powered drug discovery for targeted pesticides (AffinityLM and DrugDiscoveryGPT models).
+
+Our technology has the potential to reduce crop losses by 30% and pesticide use by 25%, saving farmers billions annually.
+
+### **Key Features:**: 
+
+Drug discovery is the process of finding new medicines that target specific proteins in the body to treat or cure diseases. It starts with researchers screening thousands or millions of compounds to identify those that bind effectively to a particular protein, winnowing down millions of possible drugs to a few hundred promising leads. This incredibly labor-intensive and costly step is the most critical in the preclinical phase.
 
 **What is Bindwell?**
 ---------------
 
-Bindwell revolutionizes drug discovery through AI-powered virtual screening. Traditional drug discovery is slow and expensive, typically involving:
-
-1. Lab-based high-throughput screening: physically testing millions of compounds to find what fits with a target protein.
-2. Structure-based virtual screening: computationally docking compounds to 3D protein models.
-
-Both methods are time-consuming, costly, and have limitations [4], such as requiring large amounts of time-prohibitive high quality 3D data and computational resources.
+1. **Speed**: Screens 700,000 compounds per second (vs. weeks for traditional methods).
+2. **Sequence-based**: Works with any protein, no 3D structure needed.
+3. **Comprehensive**: Predicts binding affinity rather than binary hits.
+4. **Data-rich**: Trained on 20 million drug-protein pairs, the largest dataset ever used in the field.Both methods are time-consuming, costly, and have limitations [4], such as requiring large amounts of time-prohibitive high quality 3D data and computational resources.
 
 Bindwell's innovation: AffinityLM, our AI model that predicts drug-protein interactions with unprecedented speed and accuracy.
 
-**Key features:**
-1. Speed: Screens 700,000 compounds per second (vs. weeks for traditional methods).
-2. Sequence-based: Works with any protein, no 3D structure needed.
-3. Comprehensive: Predicts binding affinity rather than binary hits.
-4. Data-rich: Trained on 20 million drug-protein pairs, the largest dataset ever used in the field.
+### **How it works:**
 
-**How it works:**
-1. Input: Target protein sequence
-2. Process: AI-based screening against a standard library of 500,000 drug-likely compounds
-3. Output: Top 100 drug candidates with binding predictions
+1. **Input**: Target protein sequence
+2. **Process**: AI-based screening against a standard library of 50,000 drug-likely compounds
+3. **Output**: Top 100 drug candidates with binding predictions
 
 Bindwell aims to revolutionize pharmaceutical R&D, ultimately bringing life-saving drugs to market faster and more affordably.
 
@@ -48,11 +48,14 @@ Bindwell aims to revolutionize pharmaceutical R&D, ultimately bringing life-savi
 **Impact**
 ---------------
 
-Bindwell's approach to drug discovery offers incredible implications for healthcare and scientific research:
+## **Impact**
 
-* **Rapid Response to Outbreaks**: Bindwell's sequence-only model enables immediate screening for new drugs, eliminating the need for time-consuming 3D data or physical compounds, allowing for rapid response to global pandemics and disease outbreaks.
-* **Advancing Scientific Research**: Bindwell's novel model architecture addresses data scarcity issues, providing a viable path to overcome longstanding data availability challenges in the field, and advancing scientific research.
-* **Cost and Time Savings**: Bindwell's approach offers a nearly 100% cost reduction compared to traditional methods ([such as](https://www.colorado.edu/lab/hts/rates)), while screening thousands of times more compounds, ultimately leading to faster and cheaper access to medication for people.
+Bindwell's approach to pesticide discovery offers incredible implications for agriculture and environmental sustainability:
+
+* **Targeted Solutions**: Enables farmers to apply precise, environmentally-friendly pesticides tailored to their regional pathogens/pests.
+* **Cost and Time Savings**: Offers a nearly 100% cost reduction compared to traditional methods, while screening thousands of times more compounds.
+* **Environmental Protection**: Potential to significantly reduce pesticide use and its ecological impact.
+
 
 **Building Bindwell**
 -------------------
